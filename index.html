@@ -2,95 +2,111 @@
 <html lang="en" dir="ltr">
 
   <head>
+
     <meta charset="utf-8">
+
+    <!-- site title -->
     <title>Vitalii Babanin</title>
+
+    <!-- Site description -->
     <meta name="description" content="This is the practicing web-site of my own" />
+
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
   </head>
 
+<!-- End of the document header -->
+
   <body>
-    <table cellspacing="10">
-      <tr>
-        <td><img src="images\my_photo.jpg" alt="My Photo" width="150px"></td>
-        <td>
-          <h1>Vitalii Babanin</h1>
-          <p>Just another <em>junior front-end developer</em></p>
-          <p>I am working as an industrial automation engineer at the moment.
-             But I realy wont to develope computer programes and to create computer games,
-             so I'v started to learn web development and Data sience.</p>
-        </td>
-      </tr>
-    </table>
 
-    <hr size=2>
-    <h3>Books and Teaching</h3>
+    <!-- Topper (menu, info etc.)-->
+    <div class="top_container">
+      <h1 id="topper_slogan">Life is greate!</h1>
+      <img id="logon" src="images\chip.png" alt="\(^_^)/">
+    </div>
 
-    <ul>
-      <li>Data Sience</li>
-        <ul>
-          <li><a href="https://www.udemy.com/course/the-data-science-course-complete-data-science-bootcamp/">365 Team course</a></li>
-        </ul>
-      <li>Web-Development</li>
-        <ul>
-          <li><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">The Complete 2021 Web Development Bootcamp</a></li>
-        </ul>
-    </ul>
-<hr size=2>
-    <h3>Work Experience</h3>
-    <table cellspacing="10">
-      <thead>
-        <th>Date</th>
-        <th>Work</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>2012-2013</td>
-          <td>Technic-Seller</td>
-        </tr>
-        <tr>
-          <td>2013-2017</td>
-          <td>Electonics Engenier</td>
-        </tr>
-        <tr>
-          <td>2017-2018</td>
-          <td>Leading Instrumentation Engineer</td>
-        </tr>
-        <tr>
-          <td>2018-2021</td>
-          <td>Electonics Engenier</td>
-        </tr>
-      </tbody>
-    </table>
-<hr size=2>
-    <h3>Skills</h3>
-
-    <table cellspacing="5">
+    </div>
 
 
-      <tr>
-        <td>Searching info on the Web</td>
-        <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
-        <td>Pyton</td>
-        <td>&#9733;&#9734;&#9734;&#9734;&#9734;&#9734;</td>
-      </tr>
-      <tr>
-        <td>HTML</td>
-        <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
-        <td>C#</td>
-        <td>&#9733;&#9734;&#9734;&#9734;&#9734;&#9734;</td>
-      </tr>
-      <tr>
-        <td>JavaScript</td>
-        <td>&#9733;&#9733;&#9734;&#9734;&#9734;</td>
-        <td></td>
-        <td></td>
-      </tr>
-    </table>
+    <!-- Main content container -->
+    <div class="main_container">
 
-    <hr>
-    <a href="hobbies.html"><h3>My Hobbies</h3></a>
-    <a href="contact_me.html">Contact me</a>
+
+    <!-- Top block container -->
+    <div class=content_block>
+    <img id=top_cloud src="images\cloud.png" alt="**Top*Cloud**"/>
+    <p>
+      <h1 class=centered_text>I'm Vitalii</h1>
+      <h2>a <span><u>pro</u></span>grammer</h2>
+    </p>
+    <img id=center_cloud src="images\cloud.png" alt="**Center*Cloud**"/>
+    <img id=mountain src="images\mountain.png" alt="/Mount\"/>
+    </div>
+
+    <!-- Middle site -->
+    <div class="middle-container">
+      <div class="profile">
+        <img src="images\my_photo.jpg" alt="My Photo">
+        <h2>Hello! Holla! こんにちわ!</h2>
+        <p>
+        I was born in the USSR in the West Siberia. <br />
+        I'v started to learn programming in the age of 15,
+        but did not work like a programmer for a long time.
+        My profession, after I'v finished a colledge, was an electronics enginier.<br/>
+        In 2021 I' dissided to chenge my profession to a programmer and started to learn different courses.<br/>
+        And hear I am! I am a programmer now!
+      </br/>
+        </p>
+      </div>
+      <hr>
+      <div class="skills">
+        <h2>My Skills.</h2>
+        <div class="skill-row">
+          <img src="images\web-development.png" alt="Web-development">
+          <h3>Web development</h3>
+          <p>
+            HTML, CSS, JavaScript, React, PHP and a bit of over technologis wich are needed to build a complete web-site.
+          </p>
+        </div>
+        <div class="skill-row">
+          <img src="images\console.png" alt="Game-development">
+          <h3>Game development</h3>
+          <p>I have a basic knowlage in GameDev using Unreal Engine 4.
+          </p>
+        </div>
+        <div class="skill-row">
+          <img src="images\analytics.png" alt="DataSience">
+          <h3>Data Sience</h3>
+          <p>
+            Preparing a dataset, building a prediction models etc.
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>You can contact me any time</h3>
+        <p>Fill free to sand me a couple of e-mails, I'l answer as soon as possible.</p>
+        <a class="btn" href="mailto:fragmir@gmail.com">CONTACT ME</a><br/>
+
+      </br/>
+      </div>
+    </div>
+
+    <!-- Bottom site -->
+
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+      <a class="footer-link" href="https://twitter.com/">Twitter</a>
+      <a class="footer-link" href="https://vk.com/fragmir/">VK</a>
+      <p class="copyright">© 2021 Vitalii Babanin.</p>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
 
 
   </body>
-
 </html>
